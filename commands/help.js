@@ -1,4 +1,4 @@
-const descriptions = require("../extra/descriptions.js");
+const descriptions = require("../extra/descriptions.js").default.default;
 
 module.exports = {
   name: `help`,
@@ -18,7 +18,7 @@ module.exports = {
       });
 
       message.channel
-        .send(`I'm here to provide some tools for your virtual roleplay games, feel free to feedback whenever you want. ;)
+        .send(`I'm here to provide some tools for your virtual roleplay games.
 
 This are all my commands: ${allKeysString}.
 If you want to learn more about an specific one just type "/help + command"`);

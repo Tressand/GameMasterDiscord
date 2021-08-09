@@ -1,6 +1,8 @@
+const descriptions = require("../extra/descriptions.js").default.default;
+
 module.exports = {
   name: `roll`,
-  description: `Roll some dice...`,
+  description: descriptions.roll,
 
   execute(message, args) {
     if (args.length === 0) {
