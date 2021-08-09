@@ -4,6 +4,7 @@ const client = new Discord.Client();
 const prefix = `/`;
 
 const fs = require(`fs`);
+require("dotenv").config();
 
 client.commands = new Discord.Collection();
 
@@ -37,4 +38,4 @@ client.on(`message`, (message) => {
       break;
   }
 });
-client.login(`ODAzOTczMDMxMDMwMjkyNTU3.YBFkOw.1vTuKf0QAOl0z38_DnWkw8ZWslw`);
+client.login(process.env.DISCORD_CLIENT_AUTH);

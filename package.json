@@ -2,7 +2,7 @@
   "name": "game-master",
   "version": "1.0.0",
   "description": "",
-  "main": "gm.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -L index.js",
@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.1",
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
